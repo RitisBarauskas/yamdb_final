@@ -1,4 +1,4 @@
-![example workflow](https://github.com/RitisBarauskas/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/RitisBarauskas/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
 
 # YaMDb API
@@ -27,10 +27,10 @@ The works are divided into categories: Books, Movies, Music.
 
 ## Install
 
-#### 1. Install docker and docker-compose on your server
-#### 2. Copy docker-compose.yaml and nginx/default on you directory with your settings
-#### 3. Create secrets in repository GITHUB
-#### 4. PUSH on Github
+ 1. Install docker and docker-compose on your server
+ 2. Copy `docker-compose.yaml` and `nginx/default` on you directory with your settings
+ 3. Create secrets in repository GITHUB
+ 4. PUSH on Github
 
 ## Author
 Ritis Barauskas, fullstack developer
