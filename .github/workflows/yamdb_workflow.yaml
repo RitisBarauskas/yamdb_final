@@ -1,7 +1,6 @@
 name: YaMDb - final project
 
-on: [push]:
-  branches: [ master ]
+on: [push]
 
 jobs:
   tests:
