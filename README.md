@@ -29,7 +29,30 @@ The works are divided into categories: Books, Movies, Music.
  1. Install docker and docker-compose on your server
  2. Copy `docker-compose.yaml` and `nginx/default` on you directory with your settings
  3. Create secrets in repository GITHUB
+ ```
+USERNAME_DOCKER # Pass Docker Hub
+PASSWORD_DOCKER # Login от Docker Hub
+HOST_SERVER # Public IP your server
+USERUSER_SERVER # Server user
+SSH_KEY # Private SSH-KEY 
+PASSPHRASE # Password for SSH-KEY
+TELEGRAM_TO # ID your telegram
+TELEGRAM_TOKEN # Token TG bot
+```
  4. PUSH on Github
+
+ ## First settings
+ 1. Connect to your server
+ 2. Run:  
+ * `sudo docker-compose exec web bash`
+ * `python manage.py makemigrations api`
+ * `python manage.py makemigrations`
+ * `python manage.py migrate`
+ * `python manage.py collectstatic`
+ * `python manage.py loaddata fixtures.json` - if your needs default data
+ * `python manage.py createsuperuser`
+ * `exit`
+3. Test your API-service
 
 ## Author
 Ritis Barauskas, fullstack developer
