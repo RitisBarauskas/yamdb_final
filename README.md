@@ -2,7 +2,7 @@
 
 
 # YaMDb API
-API queries: [yatube.website/api/v1/](http://yatube.website/api/v1/)
+API queries: [yatube.website:8001/api/v1/](http://yatube.website:8001/api/v1/)
 
 
 ## Description 
