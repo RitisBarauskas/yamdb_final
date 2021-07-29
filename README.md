@@ -2,9 +2,8 @@
 
 
 # YaMDb API
-Проект запущен по адресу: [84.201.167.129](http://84.201.167.129:8000)
+API queries: [yatube.website/api/v1/](http://yatube.website/api/v1/)
 
-API queries start with `/api/v1/`
 
 ## Description 
 The YaMDb project collects user reviews of works.
