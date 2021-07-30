@@ -16,7 +16,7 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from api_yamdb.settings import EMAIL_ADDRESS, EMAIL_SUBJECT
+# from api_yamdb.settings import EMAIL_ADDRESS, EMAIL_SUBJECT
 
 from .filters import TitleFilter
 from .models import Category, Genre, Review, Title, User
@@ -57,9 +57,12 @@ class RegisterView(APIView):
             serializer.save()
         else:
             confirmation_code = user[0].confirmation_code
-        user.send_mail(subject=EMAIL_SUBJECT, message=confirmation_code,
-                       from_email=EMAIL_ADDRESS)
-        return Response({'email': email})
+        # user.send_mail(subject=EMAIL_SUBJECT, message=confirmation_code,
+        #                from_email=EMAIL_ADDRESS)
+        return Response({
+            'email': email,
+            'confirmation_code': confirmation_code
+        })
 
 
 class TokenView(APIView):
