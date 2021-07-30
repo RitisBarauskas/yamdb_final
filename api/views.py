@@ -16,8 +16,6 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
 
-# from api_yamdb.settings import EMAIL_ADDRESS, EMAIL_SUBJECT
-
 from .filters import TitleFilter
 from .models import Category, Genre, Review, Title, User
 from .permissions import (IsAdmin, IsAdminOrReadOnly, IsAuthor, IsModerator,
@@ -26,6 +24,9 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleCreateSerializer, TitleListSerializer,
                           UserSerializer)
+
+# from api_yamdb.settings import EMAIL_ADDRESS, EMAIL_SUBJECT
+
 
 CUSTOM_PERMISSIONS = (
     IsAuthenticatedOrReadOnly,
